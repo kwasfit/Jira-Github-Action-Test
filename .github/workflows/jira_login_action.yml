@@ -1,0 +1,6 @@
+- name: Login
+      uses: atlassian/gajira-login@master
+      env:
+        JIRA_BASE_URL: https://kwasfit.atlassian.net
+        JIRA_USER_EMAIL: jenniferakwas@gmail.com
+        JIRA_API_TOKEN: JIRA_LOGIN_ACTION_API_TOKEN
