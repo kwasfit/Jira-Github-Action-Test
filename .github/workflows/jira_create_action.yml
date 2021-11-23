@@ -2,7 +2,7 @@ on: push
 
 - name: Jira Create
   id: create
-  uses: atlassian/gajira-create@master
+  uses: atlassian/gajira-create@v2.0.1
   with:
     project: TEST
     issuetype: Story
