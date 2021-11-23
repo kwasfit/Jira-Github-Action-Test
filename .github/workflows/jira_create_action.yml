@@ -1,16 +1,24 @@
 on: push
 
-- name: Jira Create
-  id: create
-  uses: atlassian/gajira-create@v2.0.1
-  with:
-    project: TEST
-    issuetype: Story
-    summary: |
-      New PR approval request for ${{ github.repository }}
-    description: |
-      Here is where we'd link an approval framework to reference before approving the PR in Github
-    fields: '{"customFieldId=10016": "1"}'
+name: Jira Create
 
-- name: Log created issue
-  run: echo "Issue ${{ steps.create.outputs.issue }} was created"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Jira Login
+    steps:
+    - name: Jira Create
+      id: create
+      uses: atlassian/gajira-create@v2.0.1
+      with:
+        project: TEST
+        issuetype: Story
+        summary: |
+          New PR approval request for ${{ github.repository }}
+        description: |
+          Here is where we'd link an approval framework to reference before approving the PR in Github
+        fields: '{"customFieldId=10016": "1"}'
+
+    - name: Log created issue
+      run: echo "Issue ${{ steps.create.outputs.issue }} was created"
+
