@@ -16,7 +16,7 @@ jobs:
         
     - name: Jira Create
       id: create
-      uses: atlassian/gajira-create@vmaster
+      uses: atlassian/gajira-create@master
       with:
         project: TEST
         issuetype: Story
