@@ -24,7 +24,8 @@ jobs:
           New PR approval request for ${{ github.repository }}
         description: |
           Here is where we'd link an approval framework to reference before approving the PR in Github
-        fields: '{"customFieldId=10016": "1"}'
+        #I got an error trying to populate story points below. Come back to this.
+        #fields: '{"customFieldId=10016": "1"}'
 
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
