@@ -21,7 +21,7 @@ jobs:
         project: TEST
         issuetype: Story
         summary: |
-          ${{ github.base_ref }} needs approval
+          ${{ github.head_ref }} needs approval
         description: |
           Here is where we'd link an approval framework to reference before approving the PR in Github
         #I got an error trying to populate story points below. Come back to this.
