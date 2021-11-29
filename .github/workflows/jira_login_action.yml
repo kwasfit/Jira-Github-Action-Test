@@ -21,7 +21,7 @@ jobs:
         project: TEST
         issuetype: Story
         summary: |
-          $PULL_REQUEST_TITLE needs approval
+          $ {{ $BRANCH_NAME }} needs approval
         description: |
           Here is where we'd link an approval framework to reference before approving the PR in Github
         #I got an error trying to populate story points below. Come back to this.
