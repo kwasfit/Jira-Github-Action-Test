@@ -12,6 +12,6 @@
 
 
 
-# If this PR is for a new alert request, those are now made through Securitydesk. Please see [this page](https://zendesk.atlassian.net/wiki/spaces/TDO/pages/4550918286/How+to+request+a+new+SIEM+alert+quality+standards) for more info! 
+# If this PR is for a new alert request, those are now made through Securitydesk. Please see https://zendesk.atlassian.net/wiki/spaces/TDO/pages/4550918286/How+to+request+a+new+SIEM+alert+quality+standards for more info! 
 
 ```
